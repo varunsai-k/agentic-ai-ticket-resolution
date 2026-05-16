@@ -1,0 +1,8 @@
+{
+    "dependencies":["."],
+    "graphs":{
+        "agent":"src/graph.py:agent"
+    },
+    "env":"C:\\Users\\Varun Sai Kanuri\\Downloads\\Varun\\AI\\Project1\\AgenticAITicketResolution\\.env"
+    
+}
