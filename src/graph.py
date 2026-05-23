@@ -38,7 +38,7 @@ IS_LANGGRAPH = os.getenv("LANGGRAPH_API", "false").lower() == "true"
 if IS_LANGGRAPH:
     agent = graph.compile()
 else:
-    DB_URI=os.getenv("DB_URI","postgresql://postgres:V6670@localhost:5432/langgraph")
+    DB_URI=os.getenv("DB_URI","postgresql://postgres:pwd@localhost:5432/langgraph")
 
     conn = psycopg.connect(DB_URI)
 
