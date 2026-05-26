@@ -13,10 +13,10 @@ const translations = {
     'auth.placeholder.user': 'e.g. demo',
     'auth.btn': 'Sign In',
     'auth.error': 'Invalid credentials. Please try again.',
-    'auth.footer': 'High Security Technical Support · Resolv.AI © 2026',
+    'auth.footer': 'High Security Technical Support · Tickets.Ai © 2026',
 
     // Sidebar & Navigation
-    'nav.brand': 'Resolv.AI',
+    'nav.brand': 'Tickets.Ai',
     'nav.enterprise': 'Enterprise',
     'nav.dashboard': 'Dashboard',
     'nav.tickets': 'Tickets',
@@ -25,7 +25,7 @@ const translations = {
     'nav.change_lang': 'Español',
 
     // Home / Dashboard
-    'home.badge': 'Resolv.AI Agent Active',
+    'home.badge': 'Tickets.Ai Agent Active',
     'home.title': 'Intelligent Support Copilot',
     'home.desc': 'Monitor support tickets in real-time and collaborate with the Artificial Intelligence agent to resolve complex incidents.',
     'home.btn': 'Go to Tickets',
@@ -84,7 +84,7 @@ const translations = {
     'detail.chat.placeholder': 'Draft final resolution response...',
     'detail.chat.resolved_banner': 'This incident has been resolved and closed successfully.',
     'detail.chat.system': 'System',
-    'detail.chat.agent': 'Resolv.AI',
+    'detail.chat.agent': 'Tickets.Ai',
     'detail.chat.human': 'Human Agent (You)',
     'detail.chat.error': 'Error submitting final resolution.'
   },
@@ -99,10 +99,10 @@ const translations = {
     'auth.placeholder.user': 'ej. demo',
     'auth.btn': 'Iniciar Sesión',
     'auth.error': 'Credenciales inválidas. Por favor intenta de nuevo.',
-    'auth.footer': 'Soporte Técnico de Alta Seguridad · Resolv.AI © 2026',
+    'auth.footer': 'Soporte Técnico de Alta Seguridad · Tickets.Ai © 2026',
 
     // Sidebar & Navigation
-    'nav.brand': 'Resolv.AI',
+    'nav.brand': 'Tickets.Ai',
     'nav.enterprise': 'Enterprise',
     'nav.dashboard': 'Dashboard',
     'nav.tickets': 'Tickets',
@@ -111,7 +111,7 @@ const translations = {
     'nav.change_lang': 'English',
 
     // Home / Dashboard
-    'home.badge': 'Agente Resolv.AI Activo',
+    'home.badge': 'Agente Tickets.Ai Activo',
     'home.title': 'Copiloto Inteligente de Soporte',
     'home.desc': 'Monitorea tickets de soporte en tiempo real y colabora con el agente de Inteligencia Artificial para resolver incidentes complejos.',
     'home.btn': 'Ir a mis Tickets',
@@ -170,7 +170,7 @@ const translations = {
     'detail.chat.placeholder': 'Redactar respuesta de resolución final...',
     'detail.chat.resolved_banner': 'Este incidente ha sido resuelto y cerrado con éxito.',
     'detail.chat.system': 'Sistema',
-    'detail.chat.agent': 'Resolv.AI',
+    'detail.chat.agent': 'Tickets.Ai',
     'detail.chat.human': 'Agente Humano (Tú)',
     'detail.chat.error': 'Error enviando la resolución final.'
   }

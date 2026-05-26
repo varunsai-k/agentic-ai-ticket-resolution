@@ -1,5 +1,5 @@
 # ==========================================
-# Resolv.AI - Frontend Production Dockerfile
+# Tickets.Ai - Frontend Production Dockerfile
 # Multi-stage build using Node and Nginx Alpine
 # ==========================================
 
