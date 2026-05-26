@@ -3,8 +3,8 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       # Dynamic network and credentials interpolation (shared across all developers)
-      - DB_URI=postgresql://postgres:pwd@${DB_HOST:-localhost}:5432/langgraph
-      - DATABASE_URL=postgresql+psycopg2://postgres:pwd@${DB_HOST:-localhost}:5432/postgres
+      - DB_URI=postgresql://postgres:pwd@${DB_HOST:-localhost}:${DB_PORT:-5432}/langgraph
+      - DATABASE_URL=postgresql+psycopg2://postgres:pwd@${DB_HOST:-localhost}:${DB_PORT:-5432}/postgres
       - QDRANT_CLIENT_URL=http://${QDRANT_HOST:-localhost}:6333
       - GOOGLE_API_KEY=${GOOGLE_API_KEY}
     extra_hosts:

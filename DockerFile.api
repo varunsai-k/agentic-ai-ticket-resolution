@@ -2,13 +2,19 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
+# Install uv (Rust-based fast package installer) globally in the image
+RUN pip install --no-cache-dir uv
+
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+# Use Docker BuildKit Cache Mount to cache pip/uv downloads across compiles,
+# and use uv for lightning-fast concurrent dependency resolution and installation.
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv pip install --system -r requirements.txt
 
-RUN pip install --upgrade langchain langchain-google-genai langchain-core pydantic
-
-
+# Consolidate copy step (only copies what is needed)
 COPY . .
+
+EXPOSE 8000
 
 CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "8000"]

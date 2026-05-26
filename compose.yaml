@@ -13,3 +13,19 @@ services:
       - .env
     environment:
       - PYTHONUNBUFFERED=1
+    depends_on:
+      - db
+
+  db:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER:-postgres}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-pwd}
+      - POSTGRES_DB=${POSTGRES_DB:-langgraph}
+    ports:
+      - "5435:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
