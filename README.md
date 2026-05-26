@@ -6,7 +6,7 @@ This system automates the end-to-end support ticket lifecycle — from ticket in
 
 
 
-https://github.com/user-attachments/assets/7cdaac32-2109-4873-947b-1413db1bf7c3
+<p align="center"><img src="frontend/public/ticket.ai.png" alt="Architecture Overview" width="100%" /></p>
 
 
 

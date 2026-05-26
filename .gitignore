@@ -1,0 +1,47 @@
+# ==========================================
+# Tickets.Ai - Root Git Ignore Config
+# ==========================================
+
+# Secrets & Environment configs
+.env
+.env.local
+.env.*.local
+*.env
+
+# Python compilation cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Databases & Runtime State
+*.db
+*.sqlite
+*.sqlite3
+.webfiles/
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor configs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

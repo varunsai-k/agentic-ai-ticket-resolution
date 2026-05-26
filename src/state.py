@@ -17,10 +17,10 @@ class IncidentClassification(BaseModel):
 
 class IncidentState(BaseModel):
     # Dynamic Incident context
-    incident_id: str
-    incident_title: str
-    incident_sender: str
-    incident_description: str
+    incident_id: str | None = None
+    incident_title: str | None = None
+    incident_sender: str | None = None
+    incident_description: str | None = None
     
     # Incident Classification
     classification: IncidentClassification | None = None

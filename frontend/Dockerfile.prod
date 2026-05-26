@@ -1,0 +1,30 @@
+# ==========================================
+# Tickets.Ai - Frontend Production Dockerfile
+# Multi-stage build using Node and Nginx Alpine
+# ==========================================
+
+# --- Stage 1: Build compilation ---
+FROM node:20-alpine AS builder
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+# Compile TypeScript and build optimal static assets
+RUN npm run build
+
+# --- Stage 2: Serve with High-Performance Nginx ---
+FROM nginx:1.25-alpine
+
+# Copy compiled assets from builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
+
+# Expose standard web HTTP port
+EXPOSE 80
+
+# Start Nginx server
+CMD ["nginx", "-g", "daemon off;"]

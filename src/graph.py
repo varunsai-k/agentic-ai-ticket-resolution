@@ -40,7 +40,7 @@ if IS_LANGGRAPH:
 else:
     DB_URI=os.getenv("DB_URI","postgresql://postgres:pwd@localhost:5432/langgraph")
 
-    conn = psycopg.connect(DB_URI)
+    conn = psycopg.connect(DB_URI, autocommit=True)
 
     checkpointer = PostgresSaver(conn)
 
